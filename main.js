@@ -19,9 +19,18 @@ $(document).ready(function() {
                     }
                 });
 
-                $('ul.nav li.dropdown').hover(function() {
-                  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-                }, function() {
-                  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+                const $menu = $('.dropdown');
+
+                $(document).mouseup(e => {
+                   if (!$menu.is(e.target) // if the target of the click isn't the container...
+                   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+                   {
+                     $menu.removeClass('is-active');
+                  }
+                 });
+
+                $('.toggle').on('click', () => {
+                  $menu.toggleClass('is-active');
                 });
+
             });
