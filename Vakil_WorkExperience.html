@@ -3,6 +3,8 @@
     <head>
         <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel='stylesheet' type='text/css'/>
         <link href="my.css" rel='stylesheet' type='text/css'/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="main.js"></script>
         <title>Work Experience</title>
         <meta charset='utf-8'/>
         <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
@@ -21,7 +23,12 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Vakil_AboutMe.html">About Me</a></li>
                     <li class="active"><a href="Vakil_WorkExperience.html">Work Experience</a></li>
-                    <li><a href="Vakil_Projects.html">Projects</a></li>
+                    <li class="dropdown">
+                        <a href="Vakil_Projects.html">Projects <b class="caret"></b></a>
+                        <ul class="dropdown-menu" id="mainfont">
+                             <li><a href="Vakil_ProjectsHighSchool.html">High School Projects</a></li>
+                        </ul>
+                    </li>
                     <li><a href="Vakil_ContactMe.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -60,5 +67,3 @@
         </footer>
     </body>
 </html>
-
-            
