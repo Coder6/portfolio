@@ -43,3 +43,7 @@ h1, h2 {
 #homepagejumbo {
     font-size: 2em;
 }
+
+.is-active .dropdown-menu {
+  display: block;
+}
