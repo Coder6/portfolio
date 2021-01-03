@@ -73,7 +73,7 @@ var count = 0;
 
 function setup() {
    var myCanvas = createCanvas(500, 500);
-   myCanvas.parent("finalproject");
+   myCanvas.parent("finalproject"); //to identify where to display in my portfolio
    outerTrackCirc = 2 * PI * sqrt((pow(trackW + laneWidth / 2, 2) + pow(trackH + laneWidth / 2, 2)) / 2) //calculates distance around outer track
    innerTrackCirc = 2 * PI * sqrt((pow(trackW, 2) + pow(trackH, 2)) / 2); //calculates distance around inner track
    trackDifference = outerTrackCirc - innerTrackCirc;
