@@ -24,8 +24,8 @@ var bottomLegSegmentLength = 54;
 
 function setup() 
 {
-   var myCanvas = createCanvas(400, 400); //figure out displayWidth, displayHeight for better mobile viewing
-   myCanvas.parent("lab6");
+   var myCanvas = createCanvas(400, 400);
+   myCanvas.parent("lab6"); //to identify where to display in my portfolio
    upperRightLegRotateVal = -18*PI/24;
    lowerRightLegRotateVal = 25*PI/28;
    upperLeftLegRotateVal = 18*PI/24;
